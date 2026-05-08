@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interniq</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="logo-box">
+
+      <img src="images/logo.png" class="main-logo">
+
+      <h2 class="logo">Interniq</h2>
+
+    </div>
+
+    <button class="theme-btn" onclick="toggleTheme()">
+      🌙
+    </button>
+
+    <ul>
+
+      <li>
+        <a href="#home">Home</a>
+      </li>
+
+      <li>
+        <a href="#internships">Internships</a>
+      </li>
+
+      <li>
+        <a href="#resources">Resources</a>
+      </li>
+
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+
+    </ul>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero hidden" id="home">
+
+    <h1>
+
+      <span id="typing-text"></span>
+
+    </h1>
+
+    <p>
+      Discover internships, placement resources and career opportunities from top companies.
+    </p>
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        placeholder="Search companies..."
+        id="searchInput"
+      >
+
+      <button onclick="searchInternships()">
+        Search
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- STATS SECTION -->
+
+  <section class="stats-section hidden">
+
+    <div class="stat-card">
+
+      <h2>50+</h2>
+
+      <p>Career Opportunities</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2>100+</h2>
+
+      <p>Students Reached</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2>20+</h2>
+
+      <p>Career Resources</p>
+
+    </div>
+
+    <div class="stat-card">
+
+      <h2>10+</h2>
+
+      <p>Top Companies</p>
+
+    </div>
+
+  </section>
+
+  <!-- INTERNSHIP SECTION -->
+
+  <section class="internships hidden" id="internships">
+
+    <h2>Career Opportunities</h2>
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+
+      <button class="filter-btn" onclick="filterInternships('All')">
+        All
+      </button>
+
+      <button class="filter-btn" onclick="filterInternships('Remote')">
+        Remote
+      </button>
+
+      <button class="filter-btn" onclick="filterInternships('Hybrid')">
+        Hybrid
+      </button>
+
+      <button class="filter-btn" onclick="filterInternships('Multiple Roles')">
+        Multiple Roles
+      </button>
+
+    </div>
+
+    <div class="cards-container"></div>
+
+  </section>
+
+  <!-- RESOURCES SECTION -->
+
+  <section class="resources-section hidden" id="resources">
+
+    <h2>Career Resources</h2>
+
+    <div class="resources-container">
+
+      <div class="resource-card">
+
+        <h3>Resume Tips</h3>
+
+        <p>
+          Learn how to build professional resumes that stand out.
+        </p>
+
+        <button class="resource-btn">
+          Explore
+        </button>
+
+      </div>
+
+      <div class="resource-card">
+
+        <h3>HR Interview Questions</h3>
+
+        <p>
+          Practice the most asked HR interview questions.
+        </p>
+
+        <button class="resource-btn">
+          Explore
+        </button>
+
+      </div>
+
+      <div class="resource-card">
+
+        <h3>GD Topics</h3>
+
+        <p>
+          Prepare for group discussions with trending topics.
+        </p>
+
+        <button class="resource-btn">
+          Explore
+        </button>
+
+      </div>
+
+      <div class="resource-card">
+
+        <h3>Placement Preparation</h3>
+
+        <p>
+          Improve aptitude, communication and interview skills.
+        </p>
+
+        <button class="resource-btn">
+          Explore
+        </button>
+
+      </div>
+
+      <div class="resource-card">
+
+        <h3>Resume Templates</h3>
+
+        <p>
+          Download clean and professional resume templates for internships and placements.
+        </p>
+
+        <button class="resource-btn">
+          Download
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+
+  <section class="testimonials-section hidden">
+
+    <h2>What Students Say</h2>
+
+    <div class="testimonials-container">
+
+      <div class="testimonial-card">
+
+        <p>
+          “Interniq helped me discover internship opportunities and improve my resume preparation.”
+        </p>
+
+        <h3>Rohit Sharma</h3>
+
+      </div>
+
+      <div class="testimonial-card">
+
+        <p>
+          “The career resources and placement preparation content are very useful for students.”
+        </p>
+
+        <h3>Ananya Verma</h3>
+
+      </div>
+
+      <div class="testimonial-card">
+
+        <p>
+          “Simple, clean and helpful platform for internship and placement preparation.”
+        </p>
+
+        <h3>Aditya Singh</h3>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT SECTION -->
+
+  <section class="contact-section hidden">
+
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+
+      <input
+        type="text"
+        placeholder="Your Name"
+      >
+
+      <input
+        type="email"
+        placeholder="Your Email"
+      >
+
+      <textarea
+        placeholder="Your Message"
+      ></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+
+  <section class="about-section hidden">
+
+    <h2>About Interniq</h2>
+
+    <p>
+      Interniq is a student-focused platform designed to help students discover internships, placement opportunities, career resources and interview preparation materials in one place.
+    </p>
+
+    <p>
+      Our mission is to make career opportunities more accessible and organized for students across India.
+    </p>
+
+  </section>
+
+  <!-- SAVED SECTION -->
+
+  <section class="saved-section hidden">
+
+    <h2>Saved Opportunities</h2>
+
+    <div class="saved-container"></div>
+
+  </section>
+
+  <!-- FAQ SECTION -->
+
+  <section class="faq-section hidden">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-box">
+
+      <h3>How can I apply for internships?</h3>
+
+      <p>
+        Click the “Apply Now” button on internship cards to visit official career portals.
+      </p>
+
+    </div>
+
+    <div class="faq-box">
+
+      <h3>Is Interniq free to use?</h3>
+
+      <p>
+        Yes, Interniq is completely free for students.
+      </p>
+
+    </div>
+
+    <div class="faq-box">
+
+      <h3>Can I save opportunities?</h3>
+
+      <p>
+        Yes, use the Save button to keep opportunities for later viewing.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- NOTIFICATION -->
+
+  <div class="notification" id="notification">
+    Opportunity Saved
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+
+  <button id="topBtn">
+
+    ↑
+
+  </button>
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <h3>Interniq</h3>
+
+    <p>
+      Helping students discover internships and career opportunities.
+    </p>
+
+    <div class="footer-links">
+
+  <a href="mailto:interniq8@gmail.com">
+    Email
+  </a>
+
+  <a href="https://instagram.com/_interniq" target="_blank">
+    Instagram
+  </a>
+
+</div>
+
+    <p class="copyright">
+      © 2026 Interniq. All Rights Reserved.
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
