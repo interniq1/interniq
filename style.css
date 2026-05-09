@@ -1171,3 +1171,57 @@ footer p{
 
   font-size:17px;
 }
+
+/* READ BUTTON */
+
+.read-btn{
+
+  margin-top:20px;
+
+  padding:12px 18px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:#facc15;
+
+  color:#111827;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.read-btn:hover{
+
+  transform:scale(1.05);
+
+}
+
+/* UPDATE BANNER */
+
+.update-banner{
+
+  width:100%;
+
+  background:#facc15;
+
+  color:#111827;
+
+  text-align:center;
+
+  padding:14px;
+
+  font-weight:bold;
+
+  font-size:18px;
+
+  position:sticky;
+
+  top:0;
+
+  z-index:999;
+}
