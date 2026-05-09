@@ -991,3 +991,183 @@ footer p{
   transform:scale(1.05);
 
 }
+
+/* GD SECTION */
+
+.gd-section{
+  padding:100px 60px;
+}
+
+.gd-section h2{
+  text-align:center;
+
+  font-size:48px;
+
+  margin-bottom:50px;
+}
+
+.gd-container{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+}
+
+.gd-card{
+  background:#111827;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  transition:0.4s;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.gd-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 20px 45px rgba(250,204,21,0.18);
+
+}
+
+.gd-card h3{
+  color:#facc15;
+
+  margin-bottom:15px;
+
+  font-size:24px;
+}
+
+.gd-card p{
+  color:#cbd5e1;
+
+  line-height:1.7;
+
+  font-size:17px;
+}
+
+/* HR SECTION */
+
+.hr-section{
+  padding:100px 60px;
+}
+
+.hr-section h2{
+  text-align:center;
+
+  font-size:48px;
+
+  margin-bottom:50px;
+}
+
+.hr-container{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+}
+
+.hr-card{
+  background:#111827;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  transition:0.4s;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.hr-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 20px 45px rgba(250,204,21,0.18);
+
+}
+
+.hr-card h3{
+  color:#facc15;
+
+  margin-bottom:15px;
+
+  font-size:24px;
+}
+
+.hr-card p{
+  color:#cbd5e1;
+
+  line-height:1.7;
+
+  font-size:17px;
+}
+
+/* APTITUDE SECTION */
+
+.aptitude-section{
+  padding:100px 60px;
+}
+
+.aptitude-section h2{
+  text-align:center;
+
+  font-size:48px;
+
+  margin-bottom:50px;
+}
+
+.aptitude-container{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+  gap:30px;
+}
+
+.aptitude-card{
+  background:#111827;
+
+  padding:30px;
+
+  border-radius:20px;
+
+  transition:0.4s;
+
+  border:1px solid rgba(255,255,255,0.05);
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.aptitude-card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:0 20px 45px rgba(250,204,21,0.18);
+
+}
+
+.aptitude-card h3{
+  color:#facc15;
+
+  margin-bottom:15px;
+
+  font-size:24px;
+}
+
+.aptitude-card p{
+  color:#cbd5e1;
+
+  line-height:1.7;
+
+  font-size:17px;
+}
